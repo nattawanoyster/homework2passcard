@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(229, 236, 255);
+}
+
+header {
+    background-color: white;
+    min-height: 32px;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 8px;
+    box-shadow: 4px 4px 8px #ddd;
+}
+
+header>nav a {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(27, 103, 78);
+}
+
+nav.left {
+    /* border: 1px dashed darkgreen; */
+    width: 320px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    /* to make input's box stay in the middle*/
+}
+
+nav.left .logo img {
+    width: 230px;
+    height: 68px;
+    display: flex;
+}
+
+nav.center-nav {
+    /* border: 1px dashed blue; */
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+    text-align: center;
+}
+
+
+nav.right-nav {
+    /* border: 1px dashed darkslategray; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    gap: 12px;
+}
+
+section {
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.040);
+    height: 92vh;
+}
+
+section .box .my-cart {
+    padding-bottom: 20px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+section .inbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+section .box-left {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+section .inbox .box-left-top {
+    background-color: white;
+    box-shadow: 4px 4px 5px rgb(173, 173, 173);
+    border-radius: 10px;
+    width: 380px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 5px;
+    /* flex-direction: column; */
+}
+
+section .box-left-top .googledoc-pic {
+    background-color: rgb(180, 236, 255);
+    box-shadow: 4px 4px 5px rgb(216, 216, 216);
+    border-radius: 10px;
+    width: 150px;
+    height: 100px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 5px;
+    padding-left: 10px;
+}
+
+section .box-left-top .googledoc-text {
+    /* border: 1px dashed cornflowerblue; */
+    font-size: 18px;
+    width: 150px;
+    height: 100px;
+    gap: 8px;
+    padding-top: 14px;
+
+}
+
+section .inbox .box-left-buttom {
+    /* border: 1px dashed darkred; */
+    background-color: white;
+    box-shadow: 4px 4px 5px rgb(173, 173, 173);
+    border-radius: 10px;
+    width: 380px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 5px;
+    /* flex-direction: column; */
+}
+
+section .inbox .box-left-buttom .googleslides-pic {
+    background-color: rgb(255, 227, 196);
+    box-shadow: 4px 4px 5px rgb(216, 216, 216);
+    border-radius: 10px;
+    width: 150px;
+    height: 100px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 0 5px;
+    padding-left: 10px;
+}
+
+section .box-left-buttom .googleslides-text {
+    font-size: 18px;
+}
+
+section .inbox .box-right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+    margin-top: 40px;
+}
+
+section .inbox .box-right-top {
+    /* border: 1px dashed darkgreen; */
+    background-color: white;
+    box-shadow: 4px 4px 5px rgb(173, 173, 173);
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding-top: 16px;
+    padding-left: 14px;
+    width: 350px;
+    height: 150px;
+}
+
+section .inbox .box-right-top .subtotal {
+    padding-top: 4px;
+}
+
+section label {
+    margin-top: 8px;
+}
+
+section .inbox .box-right-top input {
+    border-radius: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 4px 4px;
+    color: rgb(41, 139, 102);
+    background-color: white;
+    font-weight: bold;
+}
+
+section .inbox .box-right-buttom {
+    background-color: white;
+    box-shadow: 4px 4px 5px rgb(173, 173, 173);
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 16px;
+    padding-left: 14px;
+    width: 350px;
+    height: 150px;
+}
+
+section .box-right-buttom .payment {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-right: 8px;
+}
+
+section .box-right-buttom input {
+    background-color: rgb(201, 255, 237);
+    border: 2px darkgreen;
+    width: 150px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 5px;
+
+
+}
